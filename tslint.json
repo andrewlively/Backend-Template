@@ -1,0 +1,17 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "jsRules": {},
+  "rules": {
+    "trailing-comma": false,
+    "arrow-parens": false,
+    "max-line-length": false,
+    "prefer-for-of": false,
+    "no-bitwise": false,
+    "no-console": false,
+    "max-classes-per-file": false,
+    "variable-name": false,
+    "class-name": false
+  },
+  "rulesDirectory": ["node_modules/tslint-microsoft-contrib"]
+}

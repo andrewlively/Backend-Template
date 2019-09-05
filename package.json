@@ -1,0 +1,44 @@
+{
+  "name": "backend-template",
+  "version": "0.1.0",
+  "description": "Boilerplate for TS + Fastify + TypeORM Node.js services",
+  "main": "index.js",
+  "scripts": {
+    "compile": "./node_modules/.bin/tsc",
+    "compile:dev": "./node_modules/.bin/tsc --watch",
+    "start": "node build/index.js",
+    "start:dev": "./node_modules/.bin/nodemon --watch build build/index.js",
+    "lint": "./node_modules/.bin/tslint -c tslint.json 'src/**/*.ts'",
+    "precommit": "lint-staged",
+    "test": "npm run lint"
+  },
+  "lint-staged": {
+    "src/**/*.{ts}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "keywords": [],
+  "author": "Andrew Lively <andrew@lively.software>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "config": "^3.0.1",
+    "fastify": "^2.1.0",
+    "fastify-formbody": "^3.1.0",
+    "fastify-helmet": "^3.0.0",
+    "pg": "^7.12.1",
+    "typeorm": "^0.2.18"
+  },
+  "devDependencies": {
+    "@types/config": "0.0.34",
+    "@types/node": "^11.11.3",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4",
+    "tslint": "^5.14.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-microsoft-contrib": "^6.1.0",
+    "typescript": "^3.3.3333"
+  }
+}

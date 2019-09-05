@@ -1,0 +1,9 @@
+# Node dependencies
+node_modules/
+
+# TS output directory
+build/
+
+# ENV specific config files
+config/development.json
+config/production.json

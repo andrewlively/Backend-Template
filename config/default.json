@@ -1,0 +1,32 @@
+{
+  "database": {
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "postgres",
+    "database": "DatabaseName",
+    "synchronize": true
+  },
+  "swagger": {
+    "enabled": true,
+    "options": {
+      "info": {
+        "title": "Backend Template Docs",
+        "description": ""
+      },
+      "externalDocs": {
+        "url": "https://swagger.io",
+        "description": "Find more info here"
+      },
+      "consumes": ["application/json"],
+      "produces": ["application/json"]
+    }
+  },
+  "sentry": "",
+  "server": {
+    "host": "0.0.0.0",
+    "logger": true,
+    "port": 28960
+  }
+}
