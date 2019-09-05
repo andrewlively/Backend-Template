@@ -24,7 +24,7 @@ const main = async () => {
     }
 
     // Connect the database
-    // await Database.connect();
+    await Database.connect();
 
     // Create fastify instance
     const fastify = Fastify({
